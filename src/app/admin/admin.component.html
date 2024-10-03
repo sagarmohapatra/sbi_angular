@@ -1,13 +1,6 @@
 <mat-toolbar class="clr">
   <div class="main">
     <div class="left">
-      <!-- <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with menu icon"
-      >
-        <mat-icon>menu</mat-icon>
-      </button> -->
       <div class="app">
         <!-- <span >My App</span> -->
         <img src="../../assets/sbi_head_logo.webp" alt="" class="sub_logo" />
@@ -15,26 +8,53 @@
 
       <span class="example-spacer"></span>
     </div>
-    <div class="right">
-      
-      <!-- <button
-        mat-icon-button
-        class="example-icon"
-        aria-label="Example icon-button with share icon"
-      >
-        <mat-icon>share</mat-icon>
-      </button> -->
+    <div>
       <button
         mat-icon-button
         class="example-icon"
         aria-label="Example icon-button with menu icon"
-        
+        (click)="drawer.toggle()"
       >
-        <mat-icon class="menu">menu</mat-icon>
+        <mat-icon class="menu menu_left">menu</mat-icon>
       </button>
-      <div class="out_btn">
-        <button mat-flat-button class="clr_btn" (click)="out()">Logout</button>
+    </div>
+
+    <div class="right">
+      <div class="menu_l">
+        <button mat-button [matMenuTriggerFor]="menu" class="abc">
+          <mat-icon
+            aria-hidden="false"
+            aria-label="Example home icon"
+            fontIcon="home"
+            class="home"
+          ></mat-icon>
+        </button>
+
+        <mat-menu #menu="matMenu" class="inner_logo">
+          <!-- <button mat-menu-item>Item 1</button> -->
+          <button mat-menu-item class="clr_btn" (click)="out()">Logout</button>
+        </mat-menu>
       </div>
+
+      <!-- <div class="out_btn">
+        <button mat-flat-button class="clr_btn" (click)="out()">Logout</button>
+      </div> -->
     </div>
   </div>
 </mat-toolbar>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p >Lorem, ipsum dolor sit amet consectetur.</p>
+    <button mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <!-- <div class="example-sidenav-content"> -->
+    <!-- <button type="button" mat-button >
+      Toggle sidenav
+    </button> -->
+  <!-- </div> -->
+</mat-drawer-container>

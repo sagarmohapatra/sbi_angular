@@ -6,8 +6,9 @@
     justify-content: space-between;
   }
   .right {
-    // float:"right"
+    
     display: flex;
+    
   }
   .out_btn {
     margin-top: 0.5rem;
@@ -34,5 +35,42 @@
   .menu{
       color: #fff;
   }
+  .example-icon{
+  display: flex;
+  justify-content: start;
+ margin-right: 47rem;
+  }
+  .menu{
+    display: flex;
+    justify-content: start;
+    
+  }
+  .menu_left{
+    display: flex;
+    justify-content: start;
+  }
   
+  // .logo{
+  //   margin-top: 1rem;
+  // }
+  .inner_logo{
+    margin-top: 1rem;
+  }
+  .menu_l{
+    margin-top: 0.3rem;
+    color: #fff;
+    font-size: 5rem;
+  }
+  .abc{
+    font-size: 5rem;
+  }
+  .home{
+    font-size: 30px;
+    height: 30px ;
+    width: 30px;
+  }
+  
+}
+.example-container{
+  height: 30rem;
 }
