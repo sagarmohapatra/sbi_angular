@@ -1,0 +1,38 @@
+.clr {
+  background: #156dd1;
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .right {
+    // float:"right"
+    display: flex;
+  }
+  .out_btn {
+    margin-top: 0.5rem;
+  }
+  .clr_btn {
+    color: #fff;
+    background: black;
+  }
+  .app {
+    margin-top: 7px;
+    margin-left: 45px;
+    //    border-radius: 4px;
+  //   padding-right: 2px;
+  }
+  .sub_logo {
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 10%;
+  }
+  .left{
+      margin-left: -42px;
+  }
+  .menu{
+      color: #fff;
+  }
+  
+}

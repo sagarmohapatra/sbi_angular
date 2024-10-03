@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "sbiproject-1021f",
+    "stag": "sbiproject-1021f",
+    "stage": "sbiproject-1021f"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

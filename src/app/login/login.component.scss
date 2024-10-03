@@ -1,0 +1,40 @@
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card_container{
+    padding: 3rem;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  width: 100px;
+  height: inherit;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clr{
+    color:#fff;
+    background: #156dd1;
+}
+}
+

@@ -1,0 +1,27 @@
+
+<div class="container">
+    <mat-card class="card_container">
+        <div class="img">
+            <img src="../../assets/sbi_logo.jpg" class="logo"/>
+        </div>
+        <form class="login_form">
+            <mat-form-field appearance="outline">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="enter username">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="enter password" [type]="showPassword ? 'text' : 'password'">
+                <mat-icon matSuffix (click)="togglePasswordVisibility()">
+                    {{showPassword?'visibility_off':'visibility'}}
+                </mat-icon>
+              </mat-form-field>
+            </form>
+            <div class="btm">
+            <button mat-raised-button class="clr" (click)="send()">Login</button>
+        </div>
+    </mat-card>
+</div>
+  
+  
