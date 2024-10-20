@@ -44,17 +44,62 @@
 </mat-toolbar>
 
 <mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p >Lorem, ipsum dolor sit amet consectetur.</p>
-    <button mat-raised-button>
-      Toggle extra text
-    </button>
+  <mat-drawer
+    #drawer
+    class="example-sidenav"
+    [mode]="drawerMode"
+    [opened]="drawerOpened"
+    [ngStyle]="toggleClose"
+  >
+    <div>
+      <div class="dashRout" routerLink="/admin/dashboard">
+        <span><i class="fa-solid fa-house"></i></span>
+        <span style="margin-top: 20rem !important;" class="name">Dashboard</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/usermanagment">
+        <span><i class="fa-regular fa-user"></i></span>
+        <span class="name">User Mangement</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/devicelist">
+        <span><i class="fa-solid fa-mobile"></i></span>
+        <span class="name">Device List</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/inventory">
+        <span><i class="fa-solid fa-warehouse"></i></span>
+        <span class="name">Inventory Status</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/devicedelivery">
+        <span><i class="fa-solid fa-truck"></i></span>
+        <span class="name">Device Delivery Status</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/reports">
+        <span><i class="fa-brands fa-instagram"></i></span>
+        <span class="name">Reports</span>
+      </div>
+      <div class="dashRout">
+        <span><i class="fa-solid fa-bars"></i></span>
+        <span class="name">TMS</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/helpSuppert">
+        <span><i class="fa-solid fa-handshake-angle"></i></span>
+        <span class="name">Help & Suppert</span>
+      </div>
+      <div class="dashRout" routerLink="/admin/notification">
+        <span><i class="fa-solid fa-circle-exclamation"></i></span>
+        <span class="name">Notification Center</span>
+      </div>
+    </div>
   </mat-drawer>
 
-  <!-- <div class="example-sidenav-content"> -->
-    <!-- <button type="button" mat-button >
-      Toggle sidenav
-    </button> -->
-  <!-- </div> -->
+  <!-- Content -->
+  <div class="example-sidenav-content">
+   
+<router-outlet></router-outlet>
+    <!-- Rest of your content here -->
+  </div>
 </mat-drawer-container>
+
+
+
+
+

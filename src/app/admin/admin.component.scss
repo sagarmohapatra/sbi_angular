@@ -6,9 +6,7 @@
     justify-content: space-between;
   }
   .right {
-    
     display: flex;
-    
   }
   .out_btn {
     margin-top: 0.5rem;
@@ -21,7 +19,7 @@
     margin-top: 7px;
     margin-left: 45px;
     //    border-radius: 4px;
-  //   padding-right: 2px;
+    //   padding-right: 2px;
   }
   .sub_logo {
     width: 5rem;
@@ -29,48 +27,92 @@
     text-align: center;
     border-radius: 10%;
   }
-  .left{
-      margin-left: -42px;
+  .left {
+    margin-left: -42px;
   }
-  .menu{
-      color: #fff;
+  .menu {
+    color: #fff;
   }
-  .example-icon{
-  display: flex;
-  justify-content: start;
- margin-right: 47rem;
-  }
-  .menu{
+  .example-icon {
     display: flex;
     justify-content: start;
-    
+    margin-right: 47rem;
   }
-  .menu_left{
+  .menu {
     display: flex;
     justify-content: start;
   }
-  
+  .menu_left {
+    display: flex;
+    justify-content: start;
+  }
+
   // .logo{
   //   margin-top: 1rem;
   // }
-  .inner_logo{
+  .inner_logo {
     margin-top: 1rem;
   }
-  .menu_l{
+  .menu_l {
     margin-top: 0.3rem;
     color: #fff;
     font-size: 5rem;
   }
-  .abc{
+  .abc {
     font-size: 5rem;
   }
-  .home{
+  .home {
     font-size: 30px;
-    height: 30px ;
+    height: 30px;
     width: 30px;
   }
-  
 }
-.example-container{
+.example-container {
   height: 30rem;
+}
+.example-sidenav {
+  width: 100%; /* Default to full width */
+  max-width: 280px;
+  transition: width 1ms ease;
+}
+// .sidenav-half-closed {
+//   width: 50% !important;
+// }
+.example-sidenav {
+  transform: translateX(-80%);
+}
+// .partial-sidenav {
+//   transform: translateX(-20%);
+// }
+.dashRout {
+margin: 2rem;
+  // display: flex;  
+  // align-items: center;
+}
+.dashRout.actives {
+  background: #156dd1;
+  color: #fff;
+  margin:  2px 50px;
+  padding: 8px 8px;
+  border-radius: 10px;
+}
+.dashRout:hover {
+  background: #156dd1;
+  color: #fff;
+  border-radius: 10px;
+  padding: 100%;
+  padding: 8px 8px;
+  // margin:0 10rem ;
+  
+
+}
+.dashRout span {
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  gap: 2rem;
+}
+.dashRout .name {
+  margin-left: 4%;
 }
